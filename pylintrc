@@ -1,0 +1,8 @@
+[MASTER]
+#jobs=4
+
+[MESSAGES CONTROL]
+disable=logging-fstring-interpolation,cell-var-from-loop
+
+[REPORTS]
+output-format=text

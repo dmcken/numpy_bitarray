@@ -1,0 +1,40 @@
+[build-system]
+requires      = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+# Can be removed once the GIT dependencies are gone.
+# allow-direct-references = true
+
+[tool.hatch.version]
+path = "src/numpy_bitarray/__init__.py"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project]
+name    = "numpy_bitarray"
+dynamic = ["version"]
+authors = [
+  { name="David Mc Ken", email="david.mcken@codepro.guru" },
+]
+description="Numpy backed bitarray"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+]
+dependencies = [
+    "python-dotenv",
+    "numpy",
+]
+
+[project.urls]
+Homepage = "https://github.com/dmcken/numpy_bitarray"
+Issues   = "https://github.com/dmcken/numpy_bitarray/issues"
+
+[project.scripts]
+
+
